@@ -19,13 +19,13 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      # v3 defaults to the removed SDK package "tools" and fails with
+      # "Failed to find package 'tools'". v4 installs platform-tools only.
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Install SDK packages
-        run: |
-          yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
+        run: sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
 
       - name: Assemble debug APK
         run: ./gradlew assembleDebug --stacktrace --no-daemon

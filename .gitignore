@@ -13,3 +13,9 @@ build/
 *.ap_
 output.json
 .kotlin/
+
+# Xcode user state. The shared project and scheme stay in git.
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.moved-aside

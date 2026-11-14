@@ -1,0 +1,23 @@
+{
+  "sourceLanguage": "zh-Hans",
+  "strings": {
+    "NSLocalNetworkUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用于连接局域网里的 TeslaMateApi，读取车辆状态、行程和充电记录。"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Used to reach TeslaMateApi on your local network and load vehicle status, drives, and charges."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
